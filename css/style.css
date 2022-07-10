@@ -63,7 +63,7 @@ font-size: 13px;
     color: #000;
     position: absolute;
     top: 8%;
-    left: 52%;
+    left: 50%;
     transform: translate( -50%,50%);
 
 
@@ -75,7 +75,7 @@ font-size: 13px;
 
 .text-box p{
 
-    margin: 8px 0 40px;
+    margin: 0px 0 20px;
     font-size: 14px;
 }
 input
@@ -88,11 +88,11 @@ input
 
 input[type="text"]
 {
-    background: rgb(203, 189, 189);
+    background: rgb(255, 255, 255);
     width: 250px;
     height: 50px;
     border: darkblue;
-    outline: none;
+    outline: thin;
     padding: 0 25px;
     border-radius: 10px 0 0 10px;
     
@@ -100,29 +100,36 @@ input[type="text"]
 input[type="submit"]
 {
     position: relative;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0px 10px 10px 0;
     width:  80px;
     height: 50px;
     border: darkblue;
-    outline: none;
+    outline: thin;
     cursor: pointer;
     background: #325FEC;
     color: #FFFFFF
-}
-.box i
-{
-    position: relative;
-    border-radius: 0 1opx 10px 0;
-   
+
     
-    padding: 80px;
-    width: 50px;
-    margin: 3px;
-    background-color: aqua;
-     color: red;
+}
 
 
+.fa-ul{
 
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
 
+}
+.fa-ul li {
+
+    border: #0065fc;
+    border-style:groove;
+    border-radius: 0px 30px 30px 0px;
+    
+}
+.fa-ul li lifa-solid fa-dog {    border: #0065fc;
+    border-style:groove;
+    border-radius: 0px 30px 30px 0px;
 
 }
