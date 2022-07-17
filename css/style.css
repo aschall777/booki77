@@ -112,41 +112,52 @@ input[type="submit"]
 }
     
     .fa-location-dot{
-        display: inline-block;
+        display: inline-flex;
         padding: 0px 25px 0px 25px;
         border-radius: 10px 0px 0px 10px;
-        position: relative;
+      
         background-color: gray;
         color: #000;
-        height: 50px;
+       
         width: 50px;
         border: #000;
     }
 
 
-.fa-ul li i {    
-    display: flex;
-    height: 100%;
-    
-    
-
+.btn {
+  display: flex;
+  align-items:baseline;
+  background-color: white ;
+  border: none;
+  color: blue ;
+  padding: 8px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width:120px;
+  border-style:solid  ;
+  border-color: lightblue;
+  border-radius: 29px 29px 29px 29px ;
+  
 }
 
-.fa-ul{
-
-display: flex;
-padding: 2% 6%;
-justify-content: space-evenly;
-align-items: center;
-
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: lightblue;
+ }
+   .myicon{
+   display:inline-block;
+   height: 100%;
+   margin: -10%;
 }
-.fa-ul li  {
-    border-radius: 60px;
-    background-color: #f5f7fb; 
-    padding: .0.5em 0.6em;
-    border-style:groove;
+ i.fa {
+ border-radius: 60px; 
+ background-color: lightblue ;
+ padding: 10px 10px; 
+   }
+   .title{
+   font-family: raleway;
+   font-size: 15px;
+   color: black;
    
-    
-
-
-}
+   }
+   
