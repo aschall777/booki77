@@ -145,7 +145,7 @@ input[type="submit"]
   background-color: lightblue;
  }
    .myicon{
-   display:inline-block;
+   display: inline-block;
    height: 100%;
    margin: -10%;
 }
@@ -160,4 +160,13 @@ input[type="submit"]
    color: black;
    
    }
+   ul li {
+    display: flex;
+    justify-content:space-between; 
+    align-items: flex-start;
+ 
+    
+
+   }
+   
    
