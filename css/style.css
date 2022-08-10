@@ -201,3 +201,26 @@ input[type="submit"]
     border-radius: 5px 5px 5px 5px;
     background-color: #ffffff;
   }
+  .accommondations, .mostpopular
+  {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.flexrow{
+    display: flex;
+}
+.accommondations{
+    flex-grow: 2;
+
+}
+.mostpopular{
+    flex-grow: 2;
+     background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 2rem;
+
+}
+.fa fa-star-sharp{
+    
+}
