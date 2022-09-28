@@ -256,9 +256,10 @@ img {
 
 }
 .activ {
+  flex-direction: column;
   flex-basis: 25%;
   flex-shrink: 0;
-  padding: 20px;
+  
 
   justify-content: space-between;
   align-items: center;
@@ -327,4 +328,61 @@ img {
 .star-container > .fa-star.gray{
   color: #f2f2f2;
 }
+.activ{
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.activ .card-1{
+  flex-basis: 50%;
+  width: 100%;
+}
 
+/* tablet */
+@media (max-width: 996px) 
+{ 
+  /*...*/
+}
+/* moble */
+@media (max-width: 768px) 
+{
+  nav {
+    flex-direction: column;
+    flex-basis: 20px;
+    align-items:center;
+  }
+  .text-box h1 p{
+    align-items: center;
+  }
+
+  }
+  .fil{
+    flex-direction: column;
+   
+
+  }
+  .content{
+    flex-direction: row;
+
+  }
+  .flexrow{
+    flex-direction: column;
+    flex-basis: 20px;
+    align-items: center;
+  }
+  .mostpopular{
+    align-items: center;
+    flex-direction: row;
+  }
+  .mp-card{
+    flex-direction: row;
+  }
+  .card-container{
+    flex-direction: column;
+    flex-basis: 10px;
+    flex-shrink: 3;
+  }
+  footer{
+    flex-direction: row;
+  }
+  /*...*/
