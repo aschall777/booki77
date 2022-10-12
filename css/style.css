@@ -299,6 +299,7 @@ img {
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
+  gap: 50px;
 }
 .footer p{
   font-size: 8px;
@@ -319,6 +320,7 @@ img {
   float: right;
 
 
+
 }
 .star-container{
   color: #325fec;
@@ -328,7 +330,7 @@ img {
   color: #f2f2f2;
 
 }
-.star-container > .fa-star.gray{
+.star-container  .fa-star.gray{
   color: #f2f2f2;
 }
 .activ{
@@ -344,9 +346,47 @@ img {
 /* tablet */
 @media (max-width: 996px) 
 { 
-  /*...*/
+  nav{
+    flex-direction: row;
+    flex-basis: 50px;
+    align-items: center;
+  }
+  .text-box h1 p{
+    align-items: center;
+     /*...*/
 }
-/* moble */
+
+.fil{
+  flex-direction: row;
+
+}
+
+
+  .content{
+    flex-direction: row;
+
+    }
+
+    .flexrow{
+      flex-direction: column;
+      flex-basis: 20px;
+      align-items: center;
+    }
+    .mostpopular{
+
+      width: calc(100% + 4rem);
+      align-items: center;
+      flex-direction: column;
+      border-radius: 0;
+      order: 1;
+      padding-left: 2rem;
+      padding-right: 2rem;
+  
+    }
+
+
+
+  /* moble */
 @media (max-width: 768px) 
 {
   nav {
@@ -374,10 +414,14 @@ img {
     align-items: center;
   }
   .mostpopular{
-    width: 100%;
+    width: calc(100% + 4rem);
     align-items: center;
     flex-direction: row;
+    border-radius: 0;
     order: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
   }
   .mp-card{
     flex-direction: row;
@@ -389,15 +433,21 @@ img {
 
   }
   .footer{
+    width: calc(100% + 8rem);
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
-  }s
+    gap: 50px;
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
   /*...*/
   .accommondations{
     order: 2;
     width: 100%;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
   }
   .cards {
     display: block;
@@ -407,5 +457,8 @@ img {
   margin: 20px;
 
 }
+}
+.card-image-1{
+  height: 150px;
 }
 
