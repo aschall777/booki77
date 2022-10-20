@@ -10,7 +10,8 @@
 }
 
 body {
-  padding: 2rem;
+  padding: 2rem 2rem 0rem 2rem;
+
 }
 nav {
   display: flex;
@@ -183,7 +184,7 @@ img {
 .accommondations,
 .mostpopular {
   background-color: #f2f2f2;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 20px 20px 20px 20px;
   min-width: 20px;
   flex-basis: 20px;
@@ -278,7 +279,7 @@ img {
 
 .card-text-1 {
   width: 70%;
-  padding: 10px;
+  padding: 20px;
 }
 
 .card-container {
@@ -342,7 +343,22 @@ img {
   flex-basis: 50%;
   width: 100%;
 }
+.footer{
+  width: calc(100% + 8rem);
 
+  margin-left: -4rem;
+  margin-right: -4rem;
+  padding: 2rem 6rem ;
+}
+.footer li{
+  margin-bottom:  1rem;
+  font-size: 12px;
+
+}
+.footer  p{
+
+  font-size: 12px;
+}
 /* tablet */
 @media (max-width: 996px) 
 { 
@@ -358,6 +374,7 @@ img {
 
 .fil{
   flex-direction: row;
+  flex-wrap: wrap;
 
 }
 
@@ -374,17 +391,26 @@ img {
     }
     .mostpopular{
 
+      display: flex;
       width: calc(100% + 4rem);
       align-items: center;
-      flex-direction: column;
+      flex-direction: row;
       border-radius: 0;
       order: 1;
       padding-left: 2rem;
       padding-right: 2rem;
   
     }
-
-
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      flex-basis: 50px;
+      padding: 20px;
+      font-size: 8px;
+      gap: 20px;
+      flex-direction: row;
+      margin: auto;
+}
 
   /* moble */
 @media (max-width: 768px) 
@@ -414,9 +440,12 @@ img {
     align-items: center;
   }
   .mostpopular{
+    display: flex;
+    flex-direction: column;
     width: calc(100% + 4rem);
+
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 0;
     order: 1;
     padding-left: 2rem;
@@ -425,6 +454,7 @@ img {
   }
   .mp-card{
     flex-direction: row;
+    width: 100%;
   }
   .card-container{
     flex-direction: column;
@@ -457,8 +487,33 @@ img {
   margin: 20px;
 
 }
-}
+
 .card-image-1{
   height: 150px;
 }
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 50px;
+  padding: 20px;
+  font-size: 12px;
+  gap: 20px;
+  flex-direction: column;
+  margin: auto;
 
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #0065fc;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover:after {
+  width: 100%;
+}
+}
