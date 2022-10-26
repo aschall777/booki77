@@ -11,6 +11,7 @@
 
 body {
   padding: 2rem 2rem 0rem 2rem;
+  overflow-x :hidden;
 
 }
 nav {
@@ -180,11 +181,12 @@ img {
   justify-content: flex-start;
   border-radius: 5px 5px 5px 5px;
   max-width: 100%;
+  gap: 20px;
 }
 .accommondations,
 .mostpopular {
   background-color: #f2f2f2;
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 20px 20px 20px 20px;
   min-width: 20px;
   flex-basis: 20px;
@@ -196,6 +198,7 @@ img {
   background-color: white;
   margin: 0 0 20px;
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .mp-card .content {
@@ -362,6 +365,12 @@ img {
 /* tablet */
 @media (max-width: 996px) 
 { 
+  
+  .mostpop{
+    display: flex;
+    gap: 1rem;
+  }
+
   nav{
     flex-direction: row;
     flex-basis: 50px;
@@ -391,7 +400,6 @@ img {
     }
     .mostpopular{
 
-      display: flex;
       width: calc(100% + 4rem);
       align-items: center;
       flex-direction: row;
@@ -411,10 +419,26 @@ img {
       flex-direction: row;
       margin: auto;
 }
-
+}
   /* moble */
 @media (max-width: 768px) 
 {
+  .nav-links ul {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid #f2f2f2;
+  
+  }
+  .nav-links ul li a{
+    padding: 1rem;
+  }
+  .nav-links ul li{
+    width: 50%;
+  text-align: center;
+  }
+  .nav-links{
+    width: 100%;
+  }
   nav {
     flex-direction: column;
     flex-basis: 20px;
@@ -438,6 +462,10 @@ img {
     flex-direction: column;
     flex-basis: 20px;
     align-items: center;
+  }
+  .mostpop{
+    flex-direction: column;
+
   }
   .mostpopular{
     display: flex;
