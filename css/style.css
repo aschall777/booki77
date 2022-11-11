@@ -8,12 +8,25 @@
 *::after {
   box-sizing: border-box;
 }
+a, a:visited{
+  color: black;
 
+}
+
+a:hover{
+  color: #0065fc
+
+}
 body {
   padding: 2rem 2rem 0rem 2rem;
   overflow-x :hidden;
 
 }
+.info .fa{
+  color: #0065fc;
+}
+
+
 nav {
   display: flex;
   padding: 1rem 0;
@@ -34,7 +47,7 @@ nav img {
   position: relative;
 }
 .nav-links ul li a {
-  color: #0065fc;
+  
   text-decoration: none;
   font-size: 13px;
 }
@@ -75,7 +88,7 @@ input[type="text"] {
   padding: 0 25px;
   border-radius: 0px 0 0 0px;
 }
-input[type="submit"] {
+input[type="submit"],.moblesearch {
   position: relative;
   border-radius: 0px 10px 10px 0;
   width: 80px;
@@ -85,6 +98,11 @@ input[type="submit"] {
   cursor: pointer;
   background: #325fec;
   color: #ffffff;
+}
+.moblesearch{
+display: none;
+
+
 }
 
 .fa-location-dot {
@@ -106,7 +124,7 @@ input[type="submit"] {
   background-color: white;
   border: none;
   color: #325fec;
-  padding: 8px 8px;
+  padding: 8px 16px 8px 8px ;
   font-size: 16px;
   cursor: pointer;
   border-style: solid;
@@ -145,6 +163,7 @@ ul li {
   margin-top: 19px;
   gap: 19px;
 }
+
 .con {
   display: flex;
 }
@@ -196,6 +215,9 @@ img {
 }
 .accommondations h3 ,.mostpopular h3{
   margin-bottom: 1rem;
+  display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .showmore
 {
@@ -434,6 +456,20 @@ img {
   /* moble */
 @media (max-width: 768px) 
 {
+  .fil li{
+    order: 3;
+    margin-bottom: 16px;
+    margin-right: 16px;
+  }
+  .fil li.low {
+    order: 1;
+  }
+  .fil li.rowmance {
+    order: 2;
+  }
+  .fil{
+    gap: 0;
+  }
   .nav-links ul {
     display: flex;
     width: 100%;
@@ -461,8 +497,9 @@ img {
 
   
   .fil{
-    flex-direction: column;
+    
     flex-wrap: wrap;
+    
 
   }
   .content{
@@ -476,6 +513,7 @@ img {
   }
   .mostpop{
     flex-direction: column;
+    width: 100%;
 
   }
   .mostpopular{
@@ -491,6 +529,16 @@ img {
     padding-right: 2rem;
 
   }
+  .moblesearch{
+    display: inline-block;
+    width: 45px;
+  }
+input[type="submit"]
+{
+
+  display: none;
+}
+
   .mp-card{
     flex-direction: row;
     width: 100%;
